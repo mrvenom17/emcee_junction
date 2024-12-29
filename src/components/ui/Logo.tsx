@@ -1,11 +1,17 @@
+// src/components/ui/Logo.tsx
 import React from 'react';
-import { Mic2 } from 'lucide-react';
+import CustomImage from './CustomImage';
 
-export default function Logo() {
+const Logo: React.FC = () => {
   return (
     <div className="flex items-center">
       <div className="relative">
-        <Mic2 className="h-8 w-8 text-red-600" />
+        <CustomImage
+          src="/images/logos/logo.png"
+          alt="Emcee Junction Logo"
+          className="h-8 w-8"
+          fallbackSrc="/path/to/fallback/logo.png"
+        />
         <div className="absolute -bottom-1 -right-1 w-3 h-3 bg-white rounded-full" />
       </div>
       <div className="ml-3">
@@ -15,4 +21,6 @@ export default function Logo() {
       </div>
     </div>
   );
-}
+};
+
+export default Logo;

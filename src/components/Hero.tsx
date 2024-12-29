@@ -1,22 +1,22 @@
-import React from 'react';
+// src/components/Hero.tsx
 import { useTheme } from '../context/ThemeContext';
-
-const images = [
-  'https://images.unsplash.com/photo-1475721027785-f74eccf877e2?auto=format&fit=crop&q=80',
-  'https://images.unsplash.com/photo-1511578314322-379afb476865?auto=format&fit=crop&q=80',
-  'https://images.unsplash.com/photo-1492684223066-81342ee5ff30?auto=format&fit=crop&q=80',
-  'https://images.unsplash.com/photo-1505373877841-8d25f7d46678?auto=format&fit=crop&q=80'
-];
+import CustomImage from './ui/CustomImage'; // Ensure this is the correct import
 
 export default function Hero() {
   const { theme } = useTheme();
+  const images = [
+    '/images/hero/i1.jpg',
+    '/images/hero/i2.jpg',
+    '/images/hero/i3.jpg',
+    '/images/hero/i4.jpg'
+  ];
 
   return (
     <div className="relative h-screen w-full">
       <div className="absolute inset-0 grid grid-cols-2 grid-rows-2">
         {images.map((image, index) => (
           <div key={index} className="relative">
-            <img
+            <CustomImage  // Ensure this is the correct component
               src={image}
               alt={`Hero ${index + 1}`}
               className="w-full h-full object-cover"

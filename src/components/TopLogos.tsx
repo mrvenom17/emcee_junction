@@ -1,21 +1,24 @@
-import React from 'react';
-import { Building2, Award, Trophy, Crown } from 'lucide-react';
+
+import CustomImage from './ui/CustomImage';
 
 export default function TopLogos() {
   const logos = [
-    { icon: Building2, label: 'Corporate' },
-    { icon: Award, label: 'Excellence' },
-    { icon: Trophy, label: 'Achievement' },
-    { icon: Crown, label: 'Premium' }
+    { src: '/images/logos/logo1.png', alt: "Logo 1" },
+    { src: '/images/logos/logo2.png', alt: "Logo 2" },
+    { src: '/images/logos/logo3.png', alt: "Logo 3" },
+    { src: '/images/logos/logo4.png', alt: "Logo 4" }
   ];
 
   return (
     <div className="bg-black py-2">
       <div className="flex justify-center items-center space-x-12">
-        {logos.map(({ icon: Icon, label }, index) => (
+        {logos.map((logo, index) => (
           <div key={index} className="flex items-center">
-            <Icon className="h-6 w-6 text-white" />
-            <span className="ml-2 text-white text-sm">{label}</span>
+            <CustomImage
+              src={logo.src} 
+              alt={logo.alt} 
+              className="h-6 w-6 object-contain" 
+            />
           </div>
         ))}
       </div>
