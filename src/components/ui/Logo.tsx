@@ -7,9 +7,9 @@ const Logo: React.FC = () => {
     <div className="flex items-center">
       <div className="relative">
         <CustomImage
-          src="/images/logos/logo.png"
+          src="/images/logos/logo1.png"
           alt="Emcee Junction Logo"
-          className="h-8 w-8"
+          className="h-20 w-20"
           fallbackSrc="/path/to/fallback/logo.png"
         />
         <div className="absolute -bottom-1 -right-1 w-3 h-3 bg-white rounded-full" />

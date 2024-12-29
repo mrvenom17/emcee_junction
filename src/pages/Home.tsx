@@ -11,10 +11,12 @@ import TransitionSection from '../components/TransitionSection';
 
 export default function Home() {
   const visionToTeamImages = [
-    "https://images.unsplash.com/photo-1511795409834-ef04bbd61622?auto=format&fit=crop&q=80",
-    "https://images.unsplash.com/photo-1505236858219-8359eb29e329?auto=format&fit=crop&q=80",
-    "https://images.unsplash.com/photo-1492684223066-81342ee5ff30?auto=format&fit=crop&q=80"
+    "/images/images/p1.jpg",
+    "/images/images/p2.jpg",
+    "/images/images/p3.jpeg"
   ];
+
+
 
   const enrollToSubscriptionImages = [
     "https://images.unsplash.com/photo-1540575467063-178a50c2df87?auto=format&fit=crop&q=80",

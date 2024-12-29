@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import {Bell, User, ChevronDown, Sun, Moon } from 'lucide-react';
+import { Bell, User, ChevronDown, Sun, Moon } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import Logo from './ui/Logo';
 import AboutMenu from './AboutMenu';

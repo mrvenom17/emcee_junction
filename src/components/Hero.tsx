@@ -1,22 +1,22 @@
-// src/components/Hero.tsx
+import React from 'react';
 import { useTheme } from '../context/ThemeContext';
-import CustomImage from './ui/CustomImage'; // Ensure this is the correct import
+
+const images = [
+  '/images/hero/i1.jpg',
+  '/images/hero/i2.jpg',
+  '/images/hero/i3.jpg',
+  '/images/hero/i4.jpg'
+];
 
 export default function Hero() {
   const { theme } = useTheme();
-  const images = [
-    '/images/hero/i1.jpg',
-    '/images/hero/i2.jpg',
-    '/images/hero/i3.jpg',
-    '/images/hero/i4.jpg'
-  ];
 
   return (
     <div className="relative h-screen w-full">
       <div className="absolute inset-0 grid grid-cols-2 grid-rows-2">
         {images.map((image, index) => (
-          <div key={index} className="relative">
-            <CustomImage  // Ensure this is the correct component
+          <div key={index} style={{ gridArea: `span 1 / span 1` }} className="relative">
+            <img
               src={image}
               alt={`Hero ${index + 1}`}
               className="w-full h-full object-cover"

@@ -16,7 +16,7 @@ export default function Vision() {
           </div>
           <div className="relative">
             <img 
-              src="https://images.unsplash.com/photo-1475721027785-f74eccf877e2?auto=format&fit=crop&q=80" 
+              src="/images/images/vision.jpg" 
               alt="Vision" 
               className="rounded-lg shadow-xl"
             />

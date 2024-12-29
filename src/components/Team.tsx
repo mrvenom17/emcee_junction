@@ -5,14 +5,14 @@ const teamMembers = [
     name: "Saksham",
     role: "Co-Founder & CEO",
     bio: "Visionary leader with expertise in event management and business strategy.",
-    image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&q=80",
+    image: "/images/images/t1.jpeg",
     position: "left"
   },
   {
     name: "Sangam",
     role: "Co-Founder & CTO",
     bio: "Tech innovator driving digital transformation in event hosting.",
-    image: "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&q=80",
+    image: "images/images/t2.jpg",
     position: "right"
   }
 ];

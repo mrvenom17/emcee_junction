@@ -1,10 +1,11 @@
+import React from 'react';
 
 interface ParallaxSectionProps {
   imageUrl: string;
   height?: string;
 }
 
-export default function ParallaxSection({ imageUrl, height = "40vh" }: ParallaxSectionProps) {
+export default function ParallaxSection({ imageUrl, height = "50vh" }: ParallaxSectionProps) {
   return (
     <div 
       className="relative w-full overflow-hidden"
