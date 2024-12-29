@@ -11,9 +11,9 @@ import TransitionSection from '../components/TransitionSection';
 
 export default function Home() {
   const visionToTeamImages = [
-    "../../public/images/images/p1.jpg",
-    "../../public/images/images/p2.jpg",
-    "../../public/images/images/p3.jpeg"
+    "/images/images/p1.jpg",
+    "/images/images/p2.jpg",
+    "/images/images/p3.jpeg"
   ];
 
 
