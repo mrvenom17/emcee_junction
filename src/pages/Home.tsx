@@ -11,18 +11,18 @@ import TransitionSection from '../components/TransitionSection';
 
 export default function Home() {
   const visionToTeamImages = [
-    "/images/images/p1.jpg",
-    "/images/images/p2.jpg",
-    "/images/images/p3.jpeg"
+    "../../public/images/images/p1.jpg",
+    "../../public/images/images/p2.jpg",
+    "../../public/images/images/p3.jpeg"
   ];
 
 
 
-  const enrollToSubscriptionImages = [
-    "https://images.unsplash.com/photo-1540575467063-178a50c2df87?auto=format&fit=crop&q=80",
-    "https://images.unsplash.com/photo-1501281668745-f7f57925c3b4?auto=format&fit=crop&q=80",
-    "https://images.unsplash.com/photo-1511795409834-ef04bbd61622?auto=format&fit=crop&q=80"
-  ];
+  // const enrollToSubscriptionImages = [
+  //   "https://images.unsplash.com/photo-1540575467063-178a50c2df87?auto=format&fit=crop&q=80",
+  //   "https://images.unsplash.com/photo-1501281668745-f7f57925c3b4?auto=format&fit=crop&q=80",
+  //   "https://images.unsplash.com/photo-1511795409834-ef04bbd61622?auto=format&fit=crop&q=80"
+  // ];
 
   return (
     <>

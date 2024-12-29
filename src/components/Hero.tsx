@@ -2,10 +2,10 @@ import React from 'react';
 import { useTheme } from '../context/ThemeContext';
 
 const images = [
-  '/images/hero/i1.jpg',
-  '/images/hero/i2.jpg',
-  '/images/hero/i3.jpg',
-  '/images/hero/i4.jpg'
+  '../../public/images/hero/i1.jpg',
+  '../../public/images/hero/i2.jpg',
+  '../../public/images/hero/i3.jpg',
+  '../../public/images/hero/i4.jpg'
 ];
 
 export default function Hero() {
