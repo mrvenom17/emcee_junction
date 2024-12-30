@@ -1,10 +1,10 @@
 import { useState } from 'react';
 import { Bell, User, ChevronDown, Sun, Moon } from 'lucide-react';
 import { Link } from 'react-router-dom';
-import Logo from './ui/Logo';
-import AboutMenu from './AboutMenu';
-import NotificationPanel from './NotificationPanel';
-import { useTheme } from '../context/ThemeContext';
+import Logo from '../ui/Logo';
+import AboutMenu from '../AboutMenu';
+import NotificationPanel from '../NotificationPanel';
+import { useTheme } from '../../context/ThemeContext';
 
 export default function Navbar() {
   const [showAboutMenu, setShowAboutMenu] = useState(false);
@@ -91,3 +91,18 @@ export default function Navbar() {
     </nav>
   );
 }
+
+
+
+
+
+
+
+
+
+
+
+
+<Link to="/" className="flex items-center">
+            <Logo />
+          </Link>

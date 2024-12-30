@@ -6,11 +6,12 @@ import Contact from '../components/Contact';
 import ExperienceSection from '../components/ExperienceSection/ExperienceSection';
 import EnrollSection from '../components/EnrollSection/EnrollSection';
 import SubscriptionSection from '../components/SubscriptionSection/SubscriptionSection';
-import MultiImageParallax from '../components/MultiImageParallax';
+// import MultiImageParallax from '../components/MultiImageParallax';
 import TransitionSection from '../components/TransitionSection';
+import MultiLayerParallax from '../components/ParallaxSection';
 
 export default function Home() {
-  const visionToTeamImages = [
+  const parallaxImages = [
     "/images/images/p1.jpg",
     "/images/images/p2.jpg",
     "/images/images/p3.jpeg"
@@ -32,11 +33,11 @@ export default function Home() {
         <ExperienceSection />
       </TransitionSection>
 
+      <MultiLayerParallax images={parallaxImages} height="600px" /> {/* Use ParallaxSection, provide images and optional height */}
+
       <TransitionSection>
         <Vision />
       </TransitionSection>
-
-      <MultiImageParallax images={visionToTeamImages} />
 
       <TransitionSection>
         <Team />

@@ -1,8 +1,7 @@
 import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { ThemeProvider } from './context/ThemeContext';
-import TopLogos from './components/TopLogos';
-import Navbar from './components/Navbar';
+import Header from './components/Layout/Header';
 import Home from './pages/Home';
 import Corporate from './pages/events/Corporate';
 import Academic from './pages/events/Academic';
@@ -14,15 +13,15 @@ import PrivateEvents from './pages/events/PrivateEvents';
 import SubscriptionDetails from './pages/subscription/SubscriptionDetails';
 import AnchorProfile from './pages/profile/AnchorProfile';
 import OrganizerView from './pages/profile/OrganizerView';
-
+import EnrollPopup from './components/EnrollPopup';
 export default function App() {
   return (
     <ThemeProvider>
       <BrowserRouter>
         <div className="min-h-screen bg-white dark:bg-black">
           <div className="sticky top-0 z-50">
-            <TopLogos />
-            <Navbar />
+            <Header />
+          <EnrollPopup />
           </div>
           <Routes>
             <Route path="/" element={<Home />} />
